@@ -108,12 +108,12 @@
       <!-- Banner section -->
       <section >
         <div class="max-w-screen-xl mx-auto relative justify-center px-5 md:px-7 lg:px-8">
-          <div class="carousel w-full h-[500px] bg-blend-color-dodge">
+          <div class="carousel w-full h-[300px] lg:h-[500px] ">
             <!-- Number 1 -->
-            <div id="slide1" class="carousel-item relative w-full" style="background-image: url(./images/banner4.png)">
+            <div id="slide1" class="carousel-item relative w-full bg-blend-overlay bg-[#00000087]" style="background-image: url(./images/banner4.png)">
               <div class="flex justify-center items-center w-full">
                 <div class="text-center text-white space-y-4">
-                  <h2 class="text-7xl font-extrabold">
+                  <h2 class=" text-3xl lg:text-7xl font-extrabold">
                     Exotic tastes at your<br />
                     doorstep
                   </h2>
@@ -130,9 +130,9 @@
             </div>
             <!-- Number 2 -->
             <div id="slide2" class="carousel-item relative w-full" style="background-image: url(./images/banner3.png)">
-                <div class="flex justify-center items-center w-full">
+                <div class="flex justify-center items-center w-full bg-blend-overlay bg-[#00000087]">
                     <div class="text-center text-white space-y-4">
-                      <h2 class="text-7xl font-extrabold">
+                      <h2 class=" text-3xl lg:text-7xl font-extrabold">
                         Exotic tastes at your<br />
                         doorstep
                       </h2>
@@ -149,9 +149,9 @@
             </div>
             <!-- Number 3 -->
             <div id="slide3" class="carousel-item relative w-full" style="background-image: url(./images/banner2.png)">
-                <div class="flex justify-center items-center w-full">
+                <div class="flex justify-center items-center w-full bg-blend-overlay bg-[#00000087]">
                     <div class="text-center text-white space-y-4">
-                      <h2 class="text-7xl font-extrabold">
+                      <h2 class=" text-3xl lg:text-7xl font-extrabold">
                         Exotic tastes at your<br />
                         doorstep
                       </h2>
@@ -168,9 +168,9 @@
             </div>
             <!-- Number 4 -->
             <div id="slide4" class="carousel-item relative w-full" style="background-image: url(./images/banner1.png)">
-                <div class="flex justify-center items-center w-full">
+                <div class="flex justify-center items-center w-full bg-blend-overlay bg-[#00000087]">
                     <div class="text-center text-white space-y-4">
-                      <h2 class="text-7xl font-extrabold">
+                      <h2 class=" text-3xl lg:text-7xl font-extrabold">
                         Exotic tastes at your<br />
                         doorstep
                       </h2>
@@ -222,13 +222,13 @@
         <section>
             <div class="max-w-screen-xl mx-auto px-5 py-30 lg:pt-[200px] md:px-7 lg:px-8">
                 <!-- Deal title section -->
-                <div class="flex flex-col md:flex-row lg:flex-row">
-                    <div class="space-y-4">
-                        <h2 class="text-5xl font-bold">Deal of the day</h2>
-                        <p class="text-base font-normal w-1/2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="flex space-y-5 mt-10 justify-between flex-col md:flex-row lg:flex-row">
+                    <div class="space-y-4 ">
+                        <h2 class="text-3xl lg:text-5xl font-bold text-center lg:text-left">Deal of the day</h2>
+                        <p class="text-base font-normal lg:w-[550px] m-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                     </div>
                     <div>
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="grid grid-flow-col gap-5 justify-center text-center auto-cols-max">
                             <div class="flex flex-col">
                               <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
@@ -276,18 +276,19 @@
                           </div>
                           <!-- Rating end -->
                           <!-- modal Section  -->
-                            <button class=" text-bg-primary" onclick="my_modal_5.showModal()">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
                             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                            <form method="dialog" class="modal-box">
+                              <form method="dialog" class="modal-box">
                                 <h3 class="font-bold text-lg">Hello!</h3>
                                 <p class="py-4">Press ESC key or click the button below to close</p>
                                 <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn text-[bg-primary]">Details</button>
+                                  <!-- if there is a button in form, it will close the modal -->
+                                  <button class="btn">Close</button>
                                 </div>
-                            </form>
+                              </form>
                             </dialog>
-                        </div>
+                      </div>
                     </div>
                     <!-- number 2 -->
                     <div class="card bg-base-100 border">
@@ -393,15 +394,15 @@
         <!-- meet the team section -->
         <section>
                 <div class="max-w-screen-xl mx-auto px-5 md:px-7 lg:px-8">
-                    <div class="px-[200px] py-32 space-y-11" style="background-image: url(./images/banner1.png);">
+                    <div class=" space-y-11 bg-no-repeat bg-cover bg-center px-4 py-5  lg:px-40 lg:py-20 bg-blend-overlay bg-[#00000087]"  style="background-image: url(./images/banner1.png)">
                         <div class="space-y-4 text-center">
-                            <h3 class="text-5xl font-bold text-white ">Meet the team section</h3>
-                            <p class="w-[550px] m-auto text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <h3 class="text-xl lg:text-5xl font-bold text-white ">Meet the team section</h3>
+                            <p class=" px-4 lg:w-[550px] m-auto text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                         </div>
-                        <div class=" grid gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                        <div class=" justify-center grid gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                             <!-- number 1 -->
                             <div class=" text-white text-center space-y-3">
-                                <img src="./images/member1.png" alt="">
+                                <img class="flex justify-center" src="./images/member1.png" alt="">
                                 <h4 class="text-xl font-semibold">Awlad Hossain</h4>
                                 <p>Fruits Expert</p>
                                 <div class="flex gap-3 justify-center">
@@ -447,7 +448,102 @@
                     </div>
                 </div>
         </section>
+        <!-- Why Chosce section -->
+       <section>
+            <div class="max-w-screen-xl mx-auto px-5 py-10 lg:pt-20 md:px-7 lg:px-8">
+               <!-- Title chose section  -->
+              <div class="text-center space-y-5">
+                  <h2 class="text-2xl lg:text-5xl font-bold">Why Choose Us</h2>
+                  <p class="max-w-xl m-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+              <!-- content section -->
+              <div class="grid gap-10 py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+               <div class="order-2 lg:order-1 space-y-9">
+                <!-- number 1 -->
+                <div class="gap-3 flex flex-col lg:flex-row items-center justify-center">
+                  <div class=" w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center ">
+                    <img class="shrink-0" src="./images/group 1.png" alt="">
+                  </div>
+                  <hr>
+                  <div class="space-y-3 text-center lg:text-left">
+                    <h2 class="text-2xl font-bold">Dedicated Team</h2>
+                    <div class="w-14 border-b-4 text-black"> </div>
+                    <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                </div>
+                 <!-- number 2 -->
+                 <div class="flex gap-3 flex-col lg:flex-row items-center justify-center">
+                  <div class=" w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center ">
+                    <img class="shrink-0" src="./images/love 1.png" alt="">
+                  </div>
+                  <hr>
+                  <div class="space-y-3 text-center lg:text-left">
+                    <h2 class="text-2xl font-bold">Fresh is Best</h2>
+                    <div class="w-14 border-b-4 text-black"> </div>
+                    <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                </div>
+                 <!-- number 3 -->
+                 <div class="flex gap-3 flex-col lg:flex-row items-center justify-center">
+                  <div class=" w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center ">
+                    <img class="shrink-0" src="./images/gift-box 1.png" alt="">
+                  </div>
+                  <hr>
+                  <div class="space-y-3 text-center lg:text-left">
+                    <h2 class="text-2xl font-bold">Gift Certificates</h2>
+                    <div class="w-14 border-b-4 text-black"> </div>
+                    <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                </div>
+               </div>
 
+                <div class="order-1 lg:order-2" >
+                    <img src="./images/whychoose1.png" alt="">
+                </div>
+                <div class="order-3 lg:order-3 space-y-5">
+                  <!-- number 1 -->
+                  <div class="flex gap-3 flex-col lg:flex-row items-center justify-center">
+                    <div class="space-y-3 text-center lg:text-right">
+                      <h2 class="text-2xl font-bold">Integrated Supplier</h2>
+                      <div class="w-20 text-black border-b-4"> <hr> </div>
+                      <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+                    </div>
+                    <hr>
+                    <div class="w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center">
+                      <img class="shrink-0" src="./images/gift-box 1.png" alt="">
+                    </div>
+                  </div>
+                  <!-- number 2 -->
+                  <div class="flex gap-3 flex-col lg:flex-row items-center justify-center">
+                    <div class="space-y-3 text-center lg:text-right">
+                      <h2 class="text-2xl font-bold">Sustainable Practice</h2>
+                      <div class="w-20 text-black border-b-4"> <hr> </div>
+                      <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+                    </div>
+                    <hr>
+                    <div class="w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center">
+                      <img class="shrink-0" src="./images/ice-cream 1.png" alt="">
+                    </div>
+                  </div>
+                  <!-- number 3 -->
+                  <div class="flex gap-3 flex-col lg:flex-row items-center justify-center">
+                    <div class="space-y-3 text-center lg:text-right">
+                      <h2 class="text-2xl font-bold">The Benefits Only</h2>
+                      <div class="w-20 text-black border-b-4"> <hr> </div>
+                      <p class="px-5 lg:px-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      
+                    </div>
+                    <hr>
+                    <div class="w-24 h-14 rounded-full bg-[#1212121A] flex items-center justify-center">
+                      <img class="shrink-0" src="./images/like 1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section> 
     </main>
     <!-- Footer section -->
     <footer class="footer footer-center p-10 bg-[#121212] text-primary-content">
@@ -457,7 +553,7 @@
             <h3 class="text-4xl font-semibold">Fruit Burst</h3>
           </div>
           <div>
-            <ul class="flex justify-center gap-5">
+            <ul class="flex flex-wrap justify-center gap-5">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
